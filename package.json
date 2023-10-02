@@ -1,15 +1,26 @@
 {
-  "name": "pdw-excel-plugin",
-  "private": true,
-  "version": "0.0.0",
+  "name": "pdw-files-plugin",
+  "version": "0.0.7",
   "type": "module",
+  "main": "fileAsyncDataStores.js",
+  "types": "fileAsyncDataStores.d.ts",
+  "license": "MIT",
+  "files": [
+    "fileAsyncDataStores.js",
+    "fileAsyncDataStores.d.ts",
+    "fileAsyncDataStores.js.map"
+  ],
+  "description": "A plugin for the PDW Package for working with local files",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+  "author": "Aaron Gillespie",
+  "dependencies": {
+    "pdw": "^0.0.30",
+    "temporal-polyfill": "^0.1.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz",
+    "yaml": "^2.3.2"
   }
 }
